@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+	<servlet>
+		<servlet-name>WideCast</servlet-name>
+		<jsp-file>/WideCast.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginPage</servlet-name>
+		<jsp-file>/LoginPage.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>LoginFailure</servlet-name>
+		<jsp-file>/WEB-INF/classes/loginpages/LoginFailure.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CustomerLogin</servlet-name>
+		<jsp-file>/WEB-INF/classes/loginpages/CustomerLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerLogin</servlet-name>
+		<jsp-file>/WEB-INF/classes/loginpages/ManagerLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AccountSpecialistLogin</servlet-name>
+		<jsp-file>/WEB-INF/classes/loginpages/AccountSpecialistLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>TechnicianLogin</servlet-name>
+		<jsp-file>/WEB-INF/classes/loginpages/TechnicianLogin.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateRecord</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/UpdateRecord.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>UpdateServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SomethingWentWrong</servlet-name>
+		<jsp-file>/SomethingWentWrong.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/UpdateSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChangePlan</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/ChangePlan.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChangeServiceServlet</servlet-name>
+		<servlet-class>ChangeServiceServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ChangePlanSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/ChangePlanSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>OrderPPV</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/OrderPPV.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddPPVServlet</servlet-name>
+		<servlet-class>AddPPVServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddPPVSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/AddPPVSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddGameSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/AddGameSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RentGame</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/RentGame.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddGameServlet</servlet-name>
+		<servlet-class>AddGameServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MakePayment</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/MakePayment.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CancelPPV</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/CancelPPV.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CancelPPVServlet</servlet-name>
+		<servlet-class>CancelPPVServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CancelPPVSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/customerpages/CancelPPVSuccess.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>InsufficientPermissions</servlet-name>
+		<jsp-file>/InsufficientPermissions.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateRecordSpecialist</servlet-name>
+		<jsp-file>/WEB-INF/classes/accountspecialistpages/UpdateRecordSpecialist.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<servlet-class>UpdateCustomer</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SpecialistOrderPPV</servlet-name>
+		<servlet-class>SpecialistOrderPPV</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddPPVSpecialist</servlet-name>
+		<jsp-file>/WEB-INF/classes/accountspecialistpages/AddPPVSpecialist.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CreateUserServlet</servlet-name>
+		<servlet-class>CreateUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CreateCustomer</servlet-name>
+		<jsp-file>/WEB-INF/classes/accountspecialistpages/CreateCustomer.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CreationSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/accountspecialistpages/CreationSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>TicketController</servlet-name>
+		<jsp-file>/WEB-INF/classes/technicianpages/TicketController.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>TicketControllerServlet</servlet-name>
+		<servlet-class>TicketControllerServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>TicketChangeSuccess</servlet-name>
+		<jsp-file>/WEB-INF/classes/technicianpages/TicketChangeSuccess.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CreateTicket</servlet-name>
+		<jsp-file>/WEB-INF/classes/accountspecialistpages/CreateTicket.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerServlet</servlet-name>
+		<servlet-class>ManagerServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>GetUser</servlet-name>
+		<jsp-file>/WEB-INF/classes/managerpages/GetUser.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerSelectPage</servlet-name>
+		<jsp-file>/WEB-INF/classes/managerpages/ManagerSelectPage.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerProcessingServlet</servlet-name>
+		<servlet-class>ManagerProcessingServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerChangeSuccessPage</servlet-name>
+		<jsp-file>/WEB-INF/classes/managerpages/ManagerChangeSuccessPage.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ManagerUpdatePage</servlet-name>
+		<jsp-file>/WEB-INF/classes/managerpages/ManagerUpdatePage.jsp</jsp-file>
+	</servlet>
+	
+	
+	
+
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>WideCast</servlet-name>
+		<url-pattern>/WideCast</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet-mapping>
+		<servlet-name>LoginPage</servlet-name>
+		<url-pattern>/LoginPage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginFailure</servlet-name>
+		<url-pattern>/LoginFailure</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CustomerLogin</servlet-name>
+		<url-pattern>/CustomerLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerLogin</servlet-name>
+		<url-pattern>/ManagerLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AccountSpecialistLogin</servlet-name>
+		<url-pattern>/AccountSpecialistLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>TechnicianLogin</servlet-name>
+		<url-pattern>/TechnicianLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateRecord</servlet-name>
+		<url-pattern>/UpdateRecord</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateSuccess</servlet-name>
+		<url-pattern>/UpdateSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChangePlan</servlet-name>
+		<url-pattern>/ChangePlan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChangeServiceServlet</servlet-name>
+		<url-pattern>/ChangeServiceServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ChangePlanSuccess</servlet-name>
+		<url-pattern>/ChangePlanSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SomethingWentWrong</servlet-name>
+		<url-pattern>/SomethingWentWrong</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>OrderPPV</servlet-name>
+		<url-pattern>/OrderPPV</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddPPVServlet</servlet-name>
+		<url-pattern>/AddPPVServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddPPVSuccess</servlet-name>
+		<url-pattern>/AddPPVSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddGameSuccess</servlet-name>
+		<url-pattern>/AddGameSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RentGame</servlet-name>
+		<url-pattern>/RentGame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddGameServlet</servlet-name>
+		<url-pattern>/AddGameServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MakePayment</servlet-name>
+		<url-pattern>/MakePayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CancelPPV</servlet-name>
+		<url-pattern>/CancelPPV</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CancelPPVServlet</servlet-name>
+		<url-pattern>/CancelPPVServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CancelPPVSuccess</servlet-name>
+		<url-pattern>/CancelPPVSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+	<servlet-name>InsufficientPermissions</servlet-name>
+		<url-pattern>/InsufficientPermissions</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<url-pattern>/UpdateCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateRecordSpecialist</servlet-name>
+		<url-pattern>/UpdateRecordSpecialist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddPPVSpecialist</servlet-name>
+		<url-pattern>/AddPPVSpecialist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SpecialistOrderPPV</servlet-name>
+		<url-pattern>/SpecialistOrderPPV</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CreateCustomer</servlet-name>
+		<url-pattern>/CreateCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CreateUserServlet</servlet-name>
+		<url-pattern>/CreateUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CreationSuccess</servlet-name>
+		<url-pattern>/CreationSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>TicketController</servlet-name>
+		<url-pattern>/TicketController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>TicketControllerServlet</servlet-name>
+		<url-pattern>/TicketControllerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>TicketChangeSuccess</servlet-name>
+		<url-pattern>/TicketChangeSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CreateTicket</servlet-name>
+		<url-pattern>/CreateTicket</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerServlet</servlet-name>
+		<url-pattern>/ManagerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>GetUser</servlet-name>
+		<url-pattern>/GetUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerSelectPage</servlet-name>
+		<url-pattern>/ManagerSelectPage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerProcessingServlet</servlet-name>
+		<url-pattern>/ManagerProcessingServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerChangeSuccessPage</servlet-name>
+		<url-pattern>/ManagerChangeSuccessPage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerUpdatePage</servlet-name>
+		<url-pattern>/ManagerUpdatePage</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
